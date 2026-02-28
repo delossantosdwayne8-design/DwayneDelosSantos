@@ -21,4 +21,6 @@ I am a passionate IT student at STI College, driven by a curiosity for technolog
 - 🌟 Completed Git & GitHub Setup 2024
 - 🔭 I’m currently working on my final API project.
 
+fun fact: I'm a gamer 24/7
+
 Thanks for stopping by!
