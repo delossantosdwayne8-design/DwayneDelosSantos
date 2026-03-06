@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+ .card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+body {
+  background-color:#6700c7 ;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/013/154/720/non_2x/fireworks-in-city-background-with-city-sky-free-vector.jpg');
+    
+    /* These properties ensure the image covers the whole screen nicely */
+    background-size: cover;       /* Scales the image to fill the screen */
+    background-position: center;  /* Centers the image */
+    background-attachment: fixed; /* Keeps the background still while you scroll */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+}
+h1, h2{
+  text-align: center;
+  color: white;
+}
+h3, h5, p, label, small {
+  color: white;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 1rem); /* Grow, shrink, and basis of 1/3 width */
+  display: flex;
+  flex-direction: column; /* Keeps internal card content stacked */
+  border: 10px solid #490085;
+  background-color: #7c00cf;
+  padding: 7px;
+}
+
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-create:hover {
+    background: white;
+    color: #8c00ff;
+}
+.btn-delete:hover {
+    background: white;
+    color: #6b00b3;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column; /* Stacks label and input */
+  gap: 8px;
+  width: 300px;
+}
+
+#user-name, #wish-input {
+  padding: 10px;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+}
+
+label {
+  font-weight: bold;
+  color: #fff; /* Assuming your background is still purple */
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.controls { padding: 20px; text-align: center; }
+button { padding: 10px 20px; cursor: pointer; border-radius: 5px; border: none; font-weight: bold; }
+.btn-create { background-color: #8c00ff; color: white; margin-right: 10px; }
+.btn-delete { background-color: #6b00b3; color: white; border: 1px solid #9900ff;}
+
+</style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+
+</head>
+<body>
+  
+  <header>
+  <h1>Wish list for 2026 billboard [By Dwayne B, Delos Santos]</h1>
+  <h2>Create a post!</h2>
+  <section class="controls">
+  <div class="input-group">
+    <label for="user-name">Your Name:</label>
+    <input type="text" id="user-name" placeholder="Enter your name">
+    
+    <label for="wish-input">Your Wish for 2026:</label>
+    <input type="text" id="wish-input" placeholder="What's your wish?">
+  </div>
+  
+  <div class="button-group">
+    <button id="add-post" class="btn-create">Add to Billboard</button>
+    <button id="remove-post" class="btn-delete">Remove Last</button>
+  </div>
+</section>
+</header>
+
+<main id="blog-container" class="card-grid">
+  <article class="card">
+    <h3>Mariel's Wish for 2026</h3>
+    <p>I wish that this year will be more fun, more memorable, and worth enjoying. I hope that you must be better than last year, and I pray for that outcome to happen everyday in my life.</p>
+  <h5>Sent on: 1/09/2026</h5>
+  </article>
+<article class="card">
+    <h3>Jackson's Wish for 2026</h3>
+    <p>I wish that this new year should be worth living, and building moments. No chaos, just pure peace and love</p>
+  <h5>Sent on: 1/12/2026</h5>
+  </article>
+  <article class="card">
+    <h3>West hienstein's Wish for 2026</h3>
+    <p>I always hope that this year is an opportunity for the people to make a difference. I wish every year, especially this, that it will be full of happiness and joy all around the world.</p>
+  <h5>Sent on: 1/17/2026</h5>
+  </article>
+  <article class="card">
+    <h3>Scarlet's Wish for 2026</h3>
+    <p>Hopefully this year is full of engagements, not the negative ones, but full of positive relentless opportunities for others to feel welcome, and to make them memorable here!</p>
+  <h5>Sent on: 1/25/2026</h5>
+  </article>
+</main>
+
+<script>
+const container = document.getElementById('blog-container');
+const addBtn = document.getElementById('add-post');
+const removeBtn = document.getElementById('remove-post');
+
+// The two input fields
+const nameInput = document.getElementById('user-name');
+const wishInput = document.getElementById('wish-input');
+
+addBtn.addEventListener('click', () => {
+  const nameText = nameInput.value.trim();
+  const wishText = wishInput.value.trim();
+
+  // Validation: Ensure both fields are filled
+  if (nameText === "" || wishText === "") {
+    alert("Please fill in both your name and your wish!");
+    return;
+  }
+
+  const newPost = document.createElement('article');
+  newPost.classList.add('card');
+
+  // Insert both variables into the card
+  newPost.innerHTML = `
+    <h3>${nameText}'s Wish for 2026</h3>
+    <p>"${wishText}"</p>
+    <small>Sent on: ${new Date().toLocaleDateString()}</small>
+  `;
+
+  container.appendChild(newPost);
+
+  // Clear both boxes for the next person
+  nameInput.value = "";
+  wishInput.value = "";
+  nameInput.focus(); 
+});
+
+removeBtn.addEventListener('click', () => {
+  const posts = container.querySelectorAll('.card');
+  if (posts.length > 0) {
+    container.removeChild(posts[posts.length - 1]);
+  }
+});
+</script>
+</body>
+</html>

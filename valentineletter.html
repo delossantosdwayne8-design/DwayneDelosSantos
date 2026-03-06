@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        .bordered {
+            border: 5px solid rgb(153, 0, 0);
+            padding: 5px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        
+        body
+        {
+        font-family: Arial, sans-serif;
+        color: white;
+        margin: 20px;
+        background-color: #c90021;
+        
+        /* Replace the URL below with your actual image link */
+    background-image: url('https://media.istockphoto.com/id/1202068806/pt/vetorial/red-banner-with-valentines-hearts-valentines-greeting-banner-horizontal-holiday-background.jpg?s=170667a&w=0&k=20&c=XNyPKTkvE2L_a8itb13pQr-YSz5h7DwRsrE-JokENws=');
+    
+    /* These properties ensure the image covers the whole screen nicely */
+    background-size: cover;       /* Scales the image to fill the screen */
+    background-position: center;  /* Centers the image */
+    background-attachment: fixed; /* Keeps the background still while you scroll */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+
+
+        }
+
+        h1, h2, h3, h4 {
+            text-align: Center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: rgb(255, 0, 0);
+        }
+
+        .letter-container {
+            background: white;
+            max-width: 600px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid #fbc2eb;
+        }
+
+        .timeline-nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            border-bottom: 2px solid #ffe3e3;
+            padding-bottom: 15px;
+        }
+
+        .timeline-btn {
+    padding: 10px 20px; /* Makes them larger/tappable */
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Soft border */
+    background: transparent;
+    color: white;
+    border-radius: 50px; /* Keeps that pill shape */
+    transition: all 0.3s ease;
+}
+
+.timeline-btn:hover {
+    background: white;
+    color: #800080; /* Purple text on hover */
+}
+
+        td, th{
+
+            border: 1px, solid #ff49e7;
+            padding: 20px;
+            text-align: left;
+        }
+
+        th{
+            background-color: #ad00bd;
+            color: rgb(113, 0, 241)
+        }
+        input, select, button {
+        padding: 8px;
+        margin: 5px;
+    }
+    .form-container {
+        background: rgb(145, 0, 0);
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgb(92, 0, 0);
+    }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine letter</title>
+
+</head>
+<body>
+    <table><thead>
+<div class="form-container">
+    <h1>To My Beautiful, Wonderful, Favorite, and my longest best-friend, Crizelda. [Code: 7718]</h1>
+    <h2>I was thinking about how far we've come.</h2>
+<h3>
+    <img src="https://i.ibb.co/3DSxQtn/4627c212-d4c5-4a67-b569-8eaeb79c6f5d.jpg" alt="4627c212-d4c5-4a67-b569-8eaeb79c6f5d" border="0">
+</h3>
+    <h4>You like reading right? Take a good moment if you have the right time.</h4>
+</div>
+
+    <div class="timeline-nav">
+        <th><button class="timeline-btn" onclick="updateContent('1')">2018</button></th>
+        <th><button class="timeline-btn" onclick="updateContent('2')">2019</button></th>
+        <th><button class="timeline-btn" onclick="updateContent('3')">2020</button></th>
+        <th><button class="timeline-btn" onclick="updateContent('4')">2021</button></th>
+        <th><button class="timeline-btn" onclick="updateContent('5')">2022</button></th>
+        <th><button class="timeline-btn" onclick="updateContent('6')">2023</button></th>
+        <th><button class="timeline-btn" onclick="updateContent('7')">2024</button></th>
+        <th><button class="timeline-btn" onclick="updateContent('8')">2025</button></th>
+        <th><button class="timeline-btn" onclick="updateContent('9')">2026</button></th>
+        <th><button class="timeline-btn" onclick="updateContent('10')">Present</button></th>
+        </thead></table>
+    </div>
+
+    <div id="content-display">
+        <h1></h1>
+        <h2>Pick a year to reveal how I felt for you everyday</h2>
+    </div>
+
+    <div class="form-container">
+        <h2><img src="https://i.ibb.co/bgpJnzL8/fa3c71a6-9447-49ee-bbc5-f59078ee5cfb.jpg" alt="fa3c71a6-9447-49ee-bbc5-f59078ee5cfb" border="0">
+        </h2>
+        <h3>Thank you for being with me, Crizelda </h3>
+        <h3>[Dwayne B, Delos Santos]</h3>
+    </div>
+
+<script>
+    const memories = {
+        '1': "2018: I felt butterflies in my stomach the moment I firstly met you. I spent every single odds in my gut to get to you while my soul is pulling me backwards. The time we introduced ourselves in 7th grade, I find you very interesting to talk with despite how boring you look, but I can handle us in this bond despite how busy we are. I enjoyed our younger times that year. We shared a moment, watch funny videos in your phone sitting with each other together while sharing laughs and ideas, and pairing us both during those old light-work activities with your greatest initiative. I missed that kind of energy on you during the old days. There was a time that a teacher ma'am Liza saw us both and said 'You two are so sweet there'. You know my heart races up a bit there, and I don't know exactly how you feel on the impact of her words, Also, about that camping where both of us are in the same team, the black panthers, the super star team? yeah I missed that greatest and powerful moment. I failed to join with you and the team very much because of an unexpected timing where I had an infection in my body. There was a time I joined in the movie night about a kid who's fighting for his life from drowning to a frozen lake. You we're sitting in that chair behind me, the hooded guy. In the end, we still had a lot of fun, even going up against each other on the next school year. Although that year is where we cherished our best times together.",
+        '2': "2019: This year seemed to be interesting for us, where boring classes continue. I kept dreaming about you during those days in that year because of how vulnerable I was to you while you we're mad focusing on chasing those achievements. There I realized that I didn't just meet a lone wolf, or somebody who was being undervalued by others. I met an excellent monster who excels very much on academics. There comes my reliability to you on how to solve this, solve that because I was a total dumbass. Even conflicts are going on in our ends, I always pray that you will be always okay in your everyday life. Everyday we go home, there was a day that I finally get to meet your younger brother, Jarvis, who reached up to me because I was an awesome Minecraft commander, the guy who exploited Minecraft commands for creative advantage. Now lets talk about that science festival. You called me out to enter a classroom with science facts where you literally told me to explore new things I never know, right? But it turns out the moment I stepped in, I cannot get out until I answered a series of science questions. Never did you know that I love science during that age (and don't ask why I kept failing my exams.). So I managed to answered 5 out of 5 questions with an excellent performance I got, I finally get to head out, spot you in my sights, chasing you, and shaking you off yelling 'WHY DID YOU TELL ME!!''. And yeah that moment counts as one of my favorite scenarios that we get to bond each other. OH oh, how about this. Remember that Filipino oral recitation where I have to memorize my entire poem about 'Pag tigil sa pag-eskwela' with full emotion and outstanding performance? Yeah I teared up in the end because the prize was high stakes. 50 out of 50 points? that was mad crazy. You we're happy for me that time do you? Don't worry I was always happy for you too, as long as you really did your best there. Oh, oh, last one. Remember that time our classmate Kyle was teasing the both of us that we're a love couple? where I get to tell you that you're holding my family name? that's hilarious right?, and that other time I was moody from my family issues where Kyle prepares a setup marriage entry for the both of us and I crashed that set? eerrhh yup that was unexpected though because my mood didn't control me very much. You neutralized me by just asking 'are you okay?'', and I responded with a slight grumpy tone 'Yeah -_-'. hehe I was desparate that time was I? so anyways that year was my favorite and I didn't get to acknowledge it very much. I was a fool.",
+        '3': "2020: The unexpected global lockdown impacted our joy. COVID really did separated us from the happiness we used to love. We no longer get to meet with each other during that scenario. I felt that its the end of the world, but I didn't just let the joy end that way. Ever since COVID hit, I always think 'what happened to my homies?' 'what happened to Crizelda?' 'are my fellas alright?'. I was worried so much on that day. I always overthink that what if I die today? what if me and my family are affected?. Lucky me, I didn't let my overthinking attitude slide. Guess who reached out to you through messenger? Yep you guess that right Crizelda :D . It was me all along!. Yeah you know it. Masked guy, serious face, average bastard, and whatever you wanna call me that moment. We finally get to chat during that time. Let me guess. Everyday you keep seeing me sending some Minecraft pictures and videos about a weird-ass village in a flat world, all barricaded, and completely raid-proof? and had certain abilities exploited by commands? yeah those old times Crizelda. I even thought that its boring that we chatted that way because I know that we both play Minecraft but the moment COVID hit, those days we're over. But hey guess who never gave up for a chain to be bonded for the both of us? that's me again. I understand the burden that COVID took away all the joy we used to always love before. I didn't get to feel who I was before you know? same as you?, but I have to admit that I always prayed for my family and friends, especially you. Oh hey you know what's the luckiest part in that time? we get to skip 2 quarter exams, quizzes, and even,,, SKIPPING G8 WITHOUT FINISHING THE LAST 2 QUARTER EXAMS!! HAHAHA. ISN'T THAT INSANE!? like we instantly proceeded to the next level with no effort? that's where we gotta thank COVID for it because we never gonna get to this education level without the blessing in disguise of COVID right?, so yeah. That year was boring, and a little fun at the same time.",
+        '4': "2021: This is where our communication has gotten back!. You added me to your group chat of your family members, but only the children's group. We talked a lot of funny stuff, role-play stuff, and other of your mutuals engaging to our group chat activity. That's where I feel that joy is still alive through virtual platforms of real people talking, right?. Not gonna lie the chat was fire every time both of us are messing around with each other, and even your lil bro is shipping us while your elder brother Henzel was watching action very serious like he's gonna beat my ass anytime. But hey, at least we get to communicate with each other right?. Next, your lil bro Jarvis gets to begin a conversation with me because of our first bond. We had a good flow, everything was fine, and yeah we got secrets, and its not about us don't worry. Oh oh oh, about that story you told me, yeah I felt disheartened because of how tragic that was. I was getting to realize that things are starting to get tough on that time. I even pictured it out with my own imagination. It was bad as I can tell, but with those daily prayers from me to you and for my family and friends? we are always protected under the protection of the lord. The time where we get back to school but virtually, I always look up for your name on the class list and you weren't there. I figured out that the story you told me finally makes sense why, and I respect you for that. I felt a bit sad where you weren't there at the list because I started to have feeling for you on that time. As the class begins, I have no choice to but face reality, whatever the paths we take, as long as we get to live a long-living life. So far this year is a virtual year for us, despite the seldom communications we had, the best thing is I get to be with you before COVID happened.",
+        '5': "2022: Now as we're in 2022, things are starting to get a little tough. The conversations was still neutral, no signs of fun yet but me playing too much Mobile legends. To be honest, I felt null and I am starting to have issues, like mental issues, attitude issues, body issues or whatsoever that bothers me. There was a time that we chatted in the group chat at April 4 2022, you sent me a picture of a readable code asking me 'Can you see the code?' and I replied 'cool and it made my day'. Yeah I don't know how I am suppose to feel that but deep inside me, my heart was screaming for a golden opportunity and I just crushed it with my nullness I cannot control. That was the shot I 100% completely missed through my casual roughness. Then the moment you replied 'Yup!, I love you cus you're a good friend'. That lit a spark on my inner soul as my hart screamed another opportunity that no odds can defy, and I broke it again by saying 'same goes from me to you'. An hour after I sent that, I felt hurt because you really did loved me as your friend, and so do I. I tried compiling my words with my compiler buy my compiler isn't compiling properly (Because I felt the friendzone there don't get me wrong hahaha). So yeah that lit up a jumpstart spark within me the next day after that moment. I continue to chat along with you and the others while I was busy dealing with my homeworks where our classes resume, voice calls are popping out, conversation changes a bit there, and do you still that mutual Angel that got a beef with me? yeah I always laugh at her you know? and yeah that moment goes by, resulting another virtual year for us again.",
+        '6': "2023: This is the year where I finally get to be myself again because the moment you sent me a picture of you going to BFCSI school, I was so happy that you came back for the enrollment to G11 SHS. I then knew that COVID took 2 years of our happiness from the place we used to love. I always talked to you about how you were doing in the past 2 years despite our last continuous communication slowly fades away without you, and there you shared those happening and I was relieved that you finally get to speak up back. Now, as the back to school happened, it was a stratus day, with light rains, the weather I always love. The second I stepped foot onto the building, I feel that I am still myself but already not the age of the garden. I finally get to meet each other back, and when I see you, I felt that I have to start all over again, that's where I feel that my joy was slowly running out because I have to deal with 2 conditions. One, m probationary trial in the STEM strand, and keeping my pace up with you guys which I don't have the potential to do so, but the best is all I can give. Throughout that semester with your accompaniment, I endure our bond that I dwelled on the most into focusing on academics. You taught me an attitude to focus on what's practically best, but what's on my mind is that our bond is what's practically best for us. Turns out education is top priority and not to goof around trials. You taught me that. After days and days of enduring myself through the trial, I always think that I should not fail and I should not disappoint my friend seeing me fail. You we're the key determination of my spirit to pass the probation trial. Now, the semester has ended, I felt that nothing ha changed me. I reached out to ma'am Connie, our high school dept and asked if I passed the trial for 2 quarters, then she answered that I passed!. That means I did it!. I am proud of myself, and I have to thank you a lot for teaching me your techniques to solve the troublent stuff I am having difficulty with, but I didn't get the chance to hug and thank you because I don't want to be ashamed that only some honor students can lay a hand on you, and not me. Then I chose to celebrate for myself, cried with joy, drank a bottle because I am happy that I did it for my better future, and that credit was all from you. I passed the trial from always thinking for what you did to me, always. Although my undertakings is very basic for you because you are that one smart-ass girl I ever met and I was so lucky to have you very much with me. And hey, remember those unexpected scenarios happening in the school because of that one girl? I was pretending that I am with Lyan instead of being with you, but actually, me and Hilary are on a mission to find out what's behind her character, and turns out, we both found malicious malware inside her. Great thing is that I didn't get to tell her that I have a crush on her. She was a menace you know? Don't get me wrong Crizelda, You know how a spy works right? well don't feel hurt because I still have you in my mind and in my heart. I always have feelings for you, and for lyan? I always pretend to be true to her to find that virus inside her hahaha. So yeah those freaking scenarios escalated in that situation that we're almost doomed form 1 person. That was crazy imagine we're all getting arrested for that hahahahaha.",
+        '7': "2024: The final, and the biggest year of our greatest bond in the greatest moment. A lot of things happened here too. I could've confessed to you the moment we head back to school, but I always think of the attitude you taught me. I can understand the way you talk without saying a word. Your actions speaks louder than words right?, don't get me wrong hahaha. That was the time I tried showing you signs of affection, but I held back because I am so shy again and your aure was too strong for me to take a missile of what you called 'rejection' hahahahaha. It's not that your brother is watching me to avoid laying my hands on you, but what I am trying to mean is, I want to appreciate having you with me, as your best friend, for over 5 years. That's my signs of love. I have all of it ready, but I chose not to show it because of course, no time to deal with shame for myself, and focus again with studies. There's so many things that happened in that year. That folk dance I leaded us, me answering most of the Q&A of the chapel hour sessions, gaming with the guys on mobile legends, we won together with the class on the Christmas caroling. Oh about the Christmas party, I could've purchase you a slight expensive gift, but I was so nervous again as I always thought of your priorities ahead. And oh, the class retreat!. That is my favorite moment. Being in the class retreat with you feels like I have somebody to be with me, and of course don't get me wrong we got other guys too hahahaha. The moment we get to sit next to each other feels very romantic, but that was the time I've thinked way too far, but I just let it slide for the moment. The sports we played especially badminton, I was a hardcore sweat there right? that beach games? of course! we always loved to swim! and played some activity games there. There was a little time that I noticed you holding my hand very tight on that chair balance and you held others with their forearm or finger which made me overthink again, but I didn't overthink again. I just sticked to what is happening. Amazing thing is, I always appreciated you at your best in those days which I commended them. Then that intramurals competition where we got 2nd place. If I stood for the championship in basketball without my muscle pain sprains form that 100 meter dash, we could've won with my hardcore defensive strategies. What matters there is we had fun atleast right?. Now let's talk about that class prom. The moment you picked as your partner, it reminded me back to the first day we met in 7th grade!. I felt a lot of butterflies where my heart is racing high, that's because I'm too vulnerable with you very much. That declaration was my biggest opportunity to show to you my best in loving us more than just friends, but I chose to kept it cool for your better benefit. Remember that time I described your appearance in my left side looping your arms with mine? standing on the red carpet together? did that hit you hard the same way I got hit onto meeting you? I hopefully it does. Although it wasn't impactful, but I am being honest there, am I correct?. So, the moment we danced together at the dancefloor of the venue, I felt like I am dancing with my future fiancée. The atmosphere inside that venue was the utmost energetic romance we got the chance to feel it, and fades them fast away as the event ended. Hey also, don't forget about that Kaamulan bond with the family? where I introduced you guys to my family, the friends I'd been with?, yeaahh that was an amazing bond was it? Hilary had a nice talk with mom and you we're chilling in my side seeing my inner child. Not going to lie if I had a lot of money that time, I am going to treat you better like that class prom, right? OOoooohhhh I can see you thought of that you know hahahhaa. And op op op op, still recall that OJT? yeeahh you do. You know what I was thinking? I could've injure myself just so I can see you in the office XDDD. We enjoyed there very much right? and guess what? our friend Jazzey is trying to hit on me telling me that you're too far from NVM so I cannot reach you, but to her instead. She kept teasing me in my seat that you're too far and you cannot reach out to me but Jazzey can reach out to me first and not you. She kept teasing me that and not gonna lie, I stood up for you like a husband, playing off her so-called cheating game in the OJT hhahahaha. So yeah we had a lot of fun so far, and I always think of you during those days. Now that graduation hits, We could've stand by pair in the stage because I want to express my greatest gratitude to you, but you we're so damn late in that baccalaureate ceremony, and I do not blame you hehe. I am impressed with your accolades. I did my best throughout the year to make it on the stage, but I wasn't be able to make it in the end. 88% feels like a 2nd placer to me. I felt that I disappointed you very much thinking that 'erhh, Dwayne was so close. atleast he tried, just wasn't total enough to step up here'. I am trying to show you everything I got in that time but it wasn't enough to satisfy you, so I'll just abre with the consequences. The moment the graduation ends, I could've confessed to you my feelings in the middle of everybody, but I always know your priorities, and I kept it cool, as we all walked away with victory",
+        '8': "2025: The year our college run begins. The minute after I stepped foot in Xavier University, I was thinking of you again. I may have thought we'd run in the same school but, I always knew that our paths differ. The moments and stuffs we shared virtually through discord, the games we individually played, sharing what we got, had a lot of fun in the end. Everytime you hop in that discord call channel, it felt like a call to me, a call that feels like home, and a call that made me feel where I belong to. I really loved and enjoyed those times even how distant we are. I couldn't care less about the situation but I ensure to understand that outcome of yours. Every moment we shared in the call, was every second we spent it together. There was one time that our calls are often filled with crickets because that was the first time I get to feel myself again, but this time, I am doubtful, I am afraid to start a conversation on what was up. I wasn't as active as before. All I did was to see you grow and I felt that it wasn't enough. The second you played valorant, you gave me an idea how to engage with each other again. So I did THAT for you, learning the basic fundamentals of the game. You taught me how to shoot my shot to whoever I doubt, right?. I followed after you, deploying our doggies to spot nearby enemies, and most importantly, winning the game. Thats where our conversation flows back but this time in valorant. Valorant seems like an interesting game to play with, but playing it with you will be more than just happiness and having fun. It is the heart. I am not just doing my best throughout the warfield, nor just pulling triggers for the score, I am giving it my all to show you how I was in those old times to score to you in my life by just this engaging and the happiest man alive I can be. And hey remember that time where we're in a call that you shared your screen to me into your PE recorded class? yup you got it. I had a lot of fun learning them with you, and in that end, I still always treasure that moment we're in that virtual class together hahahhaah.",
+        '9': "2026: Now, beginning of the new little year, and new things starts to change. I couldn't stop thinking about you the moment that year hits. I always wished for your well-being during that celebration. Now that we barely get any moments this year due to several conflicts in our ends, but commonly in valorant, whatever it is I'd still count it as a moment I love to cherish it for us. I will always continue to carry on with these beloved memories we had for ourselves, and to our friends too. Mind if you can do me a favor? Please wish other of our friends a Happy valentines day for me. I can give you something I can only afford, but you can reach me out for it if you wanted to.",
+        '10': "Happy valentines Crizelda. First of all, I am sorry to disturb you in this busy moment. I know you are busy, so do I, but I want to greet you a happy valentines day with the summarized history of our journey together. I wanted to share this because I care for you. Doesn't matter what happens, but I always show care for you. These memories and moments I left here is to display how long we've been together for years. This relationship we have isn't just a friendship relationship, but it has gotta be more than that. I know you're not onto love signs, but this time, let me show you this one last time on how I'd always thought about you for this day. Our connection has grown into something that 'friendship' doesn't quite cover anymore. It’s a rare kind of consistency. No matter how much time passes or how hectic life gets, my care for you remains the one thing that doesn't shift. I’ve kept these memories close to my heart to remind myself—and now you—of how far we’ve come. I’m sharing this not to demand anything from you, but simply so you know: in this contemporary world, you have someone who has been paying attention for 2,787 days. And I’d do it all over again until I'd lived enough in this land. Enjoy your day, Crizelda. You deserve the peace.",
+    }
+
+    function updateContent(key) {
+        document.getElementById('content-display').innerText = memories[key];
+    }
+</script>
+
+</body>
+</html>
+
+<!-- 
+Reflection:
+1. What AI tool did I use?
+: I used gemini and copilot AI for this activity.
+
+2. How did it help me?
+: It helps me a lot as I gain a bit of experience to develop my skills on web developing.
+
+3. What did I modify or improve?
+: I modify nothing else but to improve my efficiency. My efficiency was slow, but I always know it takes a lot of time to redevelop such habit.
+
+4. What did I learn from this activity?
+: I get to learn and feel what developing a web looks like. I get to learn to display the picture in public, put a bakground from a picture using url.
+-->

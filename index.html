@@ -1,0 +1,418 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dwayne's Learning Log - Personal Blog</title>
+
+</head>
+<style>
+   
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #fff6f6;
+  background: #8500ad;;
+  background-image: url('https://cdn.oneesports.gg/cdn-data/2024/05/MLBB_YuZhong-1536x864.jpg');
+  /* These properties ensure the image covers the whole screen nicely */
+    background-size: cover;       /* Scales the image to fill the screen */
+    background-position: center;  /* Centers the image */
+    background-attachment: fixed; /* Keeps the background still while you scroll */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+}
+
+a {
+  color: #f5e400;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 12px;
+  padding: 10px 12px;
+  border: 1px solid #fffdfd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.skip-link:focus {
+  left: 12px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.site-header {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.8rem;
+  text-align: center
+}
+
+.site-tagline {
+  margin: 6px 0 0;
+  color: #ffffff;
+}
+
+.site-nav {
+  margin-top: 14px;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: inherit;
+  background: #8500ad;
+}
+
+.layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.layout > main {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.layout > aside {
+  flex: 0 0 320px;
+}
+
+.section-title {
+  margin: 0 0 12px;
+  font-size: 1.3rem;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post {
+  border: 4px solid #c5c5c5;
+  background-color: #8500ad;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.post h2 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+}
+
+.post-meta {
+  margin: 0 0 10px;
+  color: #8400c2;
+  font-size: 0.95rem;
+}
+
+.post p {
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.post-footer {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.chip {
+  font-size: 0.9rem;
+  padding: 2px 10px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  background: #fafafa;
+  color: #000000;
+}
+
+
+.sidebar {
+  border-left: 1px solid #e6e6e6;
+  padding-left: 18px;
+}
+
+.widget {
+  margin-bottom: 18px;
+}
+
+.widget h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.widget p {
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.widget ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+.site-footer {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 22px;
+  padding-top: 16px;
+  color: #ffffff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 18px;
+  }
+
+  .layout {
+    flex-direction: column;
+  }
+
+  .layout > aside {
+    flex-basis: auto;
+  }
+
+  .sidebar {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 16px;
+  }
+}
+    
+</style>
+<body>
+  <!-- Accessibility: skip to main content -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="container">
+    <!--
+        <header> typically contains the site title and navigation.
+      -->
+    <header class="site-header" id="home">
+      <h1 class="site-title">Dwayne's Portfolio</h1>
+      <p class="site-tagline">
+    Welcome to my learning blog! Here, I share my journey and insights as I explore the world of web development. From HTML and CSS to JavaScript and beyond, I document my progress, challenges, and triumphs in creating accessible and well-structured web pages. Join me as I learn, grow, and build a portfolio of projects that showcase my skills and creativity.
+      <!--
+          <nav> contains the main navigation links.
+        -->
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#posts">Posts</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <main id="main" aria-labelledby="posts-title">
+        <section id="posts" aria-labelledby="posts-title">
+          <h2 id="posts-title" class="section-title">Recent uploads</h2>
+
+          <div class="post-list">
+            <article class="post" aria-labelledby="post-1-title">
+              <header>
+                <h2 id="post-1-title">Building a simple Profile ID</h2>
+                <p class="post-meta">
+                  <time datetime="2026-02-13">Feb 02, 2026</time> • 4 min read
+                </p>
+              </header>
+
+              <p>
+                Building a simple profile ID page is a great way to practice CSS Grid and semantic HTML. I used <code>&lt;article&gt;</code> for the profile and <code>&lt;section&gt;</code> for the bio and contact info.
+              </p>
+
+              <footer class="post-footer">
+                <span class="chip">HTML</span>
+                <a href="Dwayne.html" aria-label="Read more: Building a simple Profile ID">
+                  View here
+                </a>
+              </footer>
+            </article>
+
+            <article class="post" aria-labelledby="post-2-title">
+              <header>
+                <h2 id="post-2-title">Building a class schedule</h2>
+                <p class="post-meta">
+                  <time datetime="2026-02-10">Feb 09, 2026</time> • 3 min read
+                </p>
+              </header>
+
+              <p>
+                This is one of the challenging assignments I'd encountered. I had to use CSS Grid to create a class schedule layout. It was a great exercise in understanding how to structure content semantically while also making it visually appealing.
+              </p>
+
+              <footer class="post-footer">
+                <span class="chip">Accessibility</span>
+                <span class="chip">HTML</span>
+                <a href="classschedule.html" aria-label="Read more: My checklist for accessible pages">
+                  View here 
+                </a>
+              </footer>
+            </article>
+
+            <article class="post" aria-labelledby="post-3-title">
+              <header>
+                <h2 id="post-3-title">Creating a valentine's letter</h2>
+                <p class="post-meta">
+                  <time datetime="2026-02-05">Feb 14, 2026</time> • 2 min read
+                </p>
+              </header>
+
+              <p>
+                Man. This is one of the minor-complex activities I ever had. I put all my ideas even the smallest ones to one page. I used semantic tags to structure the content, making it easy to read and navigate. It was a fun way to practice my HTML skills while also creating something personal.
+              </p>
+
+              <footer class="post-footer">
+                <span class="chip">Semantic</span>
+                <span class="chip">Learning</span>
+                <span class="chip">HTML</span>
+                <a href="valentineletter.html" aria-label="Read more: Why I write learning notes">View here</a>
+              </footer>
+            </article>
+
+            <article class="post" aria-labelledby="post-2-title">
+              <header>
+                <h2 id="post-2-title">Creating semantics</h2>
+                <p class="post-meta">
+                  <time datetime="2026-02-10">Feb 21, 2026</time> • 3 min read
+                </p>
+              </header>
+
+              <p>
+                For semantics, I had to use semantic tags to structure my content. I used <code>&lt;header&gt;</code> for the title and meta information, <code>&lt;main&gt;</code> for the main content, and <code>&lt;footer&gt;</code> for the post footer. It was a great way to practice using semantic HTML while also creating a well-structured page.
+              </p>
+
+              <footer class="post-footer">
+                <span class="chip">Semantics</span>
+                <span class="chip">HTML</span>
+                <a href="semantic.html" aria-label="Read more: My checklist for accessible pages">
+                  View here 
+                </a>
+              </footer>
+            </article>
+
+            <article class="post" aria-labelledby="post-2-title">
+              <header>
+                <h2 id="post-2-title">Creating semantics with combinators</h2>
+                <p class="post-meta">
+                  <time datetime="2026-02-10">Feb 25, 2026</time> • 3 min read
+                </p>
+              </header>
+
+              <p>
+                Damn. I started to feel heavy when we first landed this topic. My thoughts is that even if I had a semantic, why with combinators? I had to use CSS combinators to style elements based on their relationships in the HTML structure. It was a bit tricky at first, but it really helped me understand how to target specific elements without adding extra classes or IDs.
+              </p>
+
+              <footer class="post-footer">
+                <span class="chip">Semantics</span>
+                <span class="chip">Combinators</span>
+                <span class="chip">HTML</span>
+                <span class="chip">Javascript</span>
+                <a href="semanticwithcombinators.html" aria-label="Read more: My checklist for accessible pages">
+                  View here 
+                </a>
+              </footer>
+            </article>
+            
+          </div>
+        </section>
+      </main>
+
+      <!--
+          <aside> is related content that supports the main content.
+          This is a realistic blog sidebar.
+        -->
+      <aside class="sidebar" id="about" aria-labelledby="sidebar-title">
+        <h2 id="sidebar-title" class="section-title">About me</h2>
+
+        <section class="widget" aria-labelledby="about-title">
+          <img src="https://i.ibb.co/pv1sYt6m/82eed205-1d89-42b3-a0e8-48668548f2a3.jpg" alt="Dwayne's profile picture">
+          <p>
+          Sup y'all!. I’m Dwayne, a passionate IT student at Xavier University ateneo de Cagayan College. This is my learning log where I share my journey through the world of technology, coding, and all things IT. Thanks for stopping by!
+          </p>
+        </section>
+
+        <section class="widget" aria-labelledby="categories-title">
+          <h3 id="categories-title">Categories</h3>
+          <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Semantic</a></li>
+            <li><a href="#">Combinators</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+
+          <form action="#" method="post">
+            <div class="field">
+              <h1>CONTACT INFO:</h1>
+              <label for="email">XU-Email address:</label>
+              <a href="mailto:20240030512@my.xu.edu.ph">20240030512@my.xu.edu.ph</a>
+              <label for="phone">Phone Number:</label>
+              <a href="tel:09776184828">09776184828</a>
+            </div>
+          </form>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="site-footer" id="contact" aria-label="Site footer">
+      <p style="margin: 0">
+        © 2026 Dwayne's Portfolio Log •
+      </p>
+    </footer>
+  </div>
+</body>
